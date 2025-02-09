@@ -1,0 +1,122 @@
+@layer base{
+    @font-face {
+        font-family: 'circular-web';
+        src: url('/public/fonts/circularweb-book.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'general';
+        src: url('/public/fonts/general.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'robert-m';
+        src: url('/public/fonts/robert-medium.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'robert-r';
+        src: url('/public/fonts/robert-regular.woff2') format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'zentry';
+        src: url('/public/fonts/zentry-regular.woff2') format('woff2');
+    }
+}
+
+
+
+
+@layer utilities {
+    .border-hsla {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  
+    .floating-nav {
+      background-color: black;
+      border-radius: 0.5rem;
+      border: 1px solid;
+    }
+  
+    .absolute-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .mask-clip-path {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    .hero-heading {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 5rem;
+    }
+  
+    .about-subtext {
+      position: absolute;
+      bottom: -80vh;
+      left: 50%;
+      width: 100%;
+      max-width: 34rem;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 1.125rem;
+    }
+  
+    .story-img-mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+    }
+  
+    .sword-man-clip-path {
+      clip-path: polygon(16% 0, 89% 15%, 75% 100%, 0 97%);
+    }
+  
+    .contact-clip-path-1 {
+      clip-path: polygon(25% 0%, 74% 0, 69% 64%, 34% 73%);
+    }
+  
+    .contact-clip-path-2 {
+      clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
+    }
+  }
+  
+  .indicator-line {
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .indicator-line.active {
+    animation: indicator-line 0.5s ease infinite;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+  }
+  
+  @keyframes indicator-line {
+    0% {
+      height: 4px;
+      transform: translateY(0px);
+    }
+    50% {
+      height: 16px;
+      transform: translateY(-4px);
+    }
+    100% {
+      height: 4px;
+      transform: translateY(0px);
+    }
+  }
+  
