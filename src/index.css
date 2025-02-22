@@ -55,8 +55,8 @@
   
     .hero-heading {
       text-transform: uppercase;
-      font-weight: 900;
-      font-size: 5rem;
+      font-weight:bolder;
+      font-size: 7rem;
     }
   
     .about-subtext {
