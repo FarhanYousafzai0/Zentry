@@ -75,19 +75,19 @@ className="absolut top-0 left-0 size-full transition-all object-cover object-cen
 onLoadedData={()=>handleLoadVideo}
   />
 <div>
-    
+    {/*  */}
   <h1 className='absolute hero-heading z-40 text-blue-100  font-[zentry] bottom-5 right-5'>G<b>a</b>ming</h1> 
-
   <div className='absolute left-0 top-0 size-full z-40'>
     <div className='px-5 mt-24  md:px-10'>
-<h1 className='font-[zentry] font-extrabold hero-heading text-blue-100'>Redfi<b>n</b>e</h1>
-
-<p className='font-[robert-r] max-w-64 text-blue-100'>Enter the Metagame <br />Unleash the Play Economy.</p>
+<h1 className='font-[zentry] font-extrabold hero-heading leading-none text-blue-100'>Redfi<b>n</b>e</h1>
+<p className='font-[robert-r] max-w-64 leading-none  text-blue-100'>Enter the Metagame <br />Unleash the Play Economy.</p>
     </div>
     
     
-    
+
     </div> 
+
+
 </div>
 
  </div>
