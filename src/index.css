@@ -196,22 +196,23 @@
   
   .bento-title {
     text-transform: uppercase;
-    font-size: 4rem;
+    
     font-weight: 900;
     font-family: var(--font-zentry);
   }
   
   .story-img-container {
     position: relative;
-    height: 90vh;
-    width: 100%;
+    height: 70vh;
+    width: 50%;
     filter: url("#flt_tag");
   }
   
   .story-img-mask {
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 0;
+  
     width: 100%;
     height: 100%;
     overflow: hidden;
